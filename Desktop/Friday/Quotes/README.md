@@ -2,6 +2,31 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
+## Author
+
+By **Kinuthia David**
+
+## Description
+
+An application where users can create quotes and have those quotes up voted or down voted depending on whether other users find them inspirational or not. 
+(https://kd-kinuthiadavid.github.io/Quotes/Quotes)
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0
+
+## Requirements (for Users)
+
+* A user can create a new quote
+* A user can either Up vote or Down Vote a quote
+* A user can delete a quote
+* A user can see the number of upvotes and downvotes for each quote
+
+## Technologies Used
+
+* Angular cli
+* Node - for Dependancy Management
+* Bootstrap
+* Custom Css
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +50,35 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Known Bugs
+
+It does not have bugs.But if any problems should occur, email me at kd.kinuthiadavid@gmail.com
+
+## Support and Contact Details
+
+You can reach out to me at  kd.kinuthiadavid@gmail.com
+for Reviews, Advice, Collaborations and Comments
+
+## Licence
+
+MIT License
+
+Copyright (c) 2018 **Kinuthia David**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN

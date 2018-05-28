@@ -9,15 +9,14 @@ import { Quote } from '../quote'
 export class QuoteFormComponent implements OnInit {
 
   @Output() sendQuote = new EventEmitter<any>();
-  // quote: string;
-  // author: string;
+  
   newQuote = new Quote("","","",new Date());
 
   getQuotes(get){
-    var sendingQuote
+    var QuoteToBeSent
     // console.log(get.value);
-    sendingQuote = new Quote(get.value.theQuote,get.value.author,get.value.person,get.value.timeCreated)
-    this.sendQuote.emit(sendingQuote);
+    QuoteToBeSent = new Quote(get.value.theQuote,get.value.author,get.value.person,get.value.timeCreated)
+    this.sendQuote.emit(QuoteToBeSent);
     get.reset();//Clears the form after submitting
   }
   constructor() { }

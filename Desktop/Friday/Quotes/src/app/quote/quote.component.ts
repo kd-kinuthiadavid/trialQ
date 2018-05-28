@@ -1,41 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
-import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css'],
-  animations: [
 
-    trigger('theQuotes', [
-      transition('* => *',[
-        query(':enter', style({ opacity: 0}), {optional: true}),
-
-        query(':enter', stagger('300ms',[
-          animate('.6s ease-in',keyframes([
-            style({opacity:0, transform: 'translateY(-75%)',offset: 0}),
-            style({opacity:.5, transform: 'translateY(35px)',offset: .3}),
-            style({opacity:1, transform: 'translateY(0)',offset: 1}),
-          ]))]),{optional: true}),
-
-          query(':leave', stagger('300ms',[
-            animate('.6s ease-in',keyframes([
-              style({opacity:1, transform: 'translateY(0%)',offset: 0}),
-              style({opacity:.5, transform: 'translateY(35px)',offset: .3}),
-              style({opacity:0, transform: 'translateY(-75%)',offset: 1}),
-            ]))]),{optional: true}),
-      ])
-    ])
-  ]
 })
 export class QuoteComponent implements OnInit {
-  // myQuote : any= {
-  //   id: 1,
-  //   quote: String,
-  //   by: String
-  // }
-  theQuotes=[new Quote("Remember no one can make you feel inferior without your consent.","Eleanor Roosevelt","Me",new Date(2018,3,17))]
+
+  theQuotes=[new Quote("I Am The Greatest.","Muhammad Ali","Kinuthia David",new Date(2018,5,26))]
 
   deleteQuote(isComplete,index) {
     this.theQuotes.splice(index,1);
@@ -63,9 +37,6 @@ export class QuoteComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    // this.myQuote.quote = "Remember no one can make you feel inferior without your consent.";
-    // this.myQuote.by= "Eleanor Roosevelt";
-  }
+  ngOnInit() { }
 
 }
