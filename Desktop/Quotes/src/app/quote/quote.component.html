@@ -1,0 +1,64 @@
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 header">
+        <h1>
+
+          <span class="text-uppercase">Quotes</span>
+
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="container [@quote]='theQuote' ">
+    
+    <div class="row form-quote">
+      <div class="col-md-6">
+        <app-quote-form (sendQuote)="receiveQuote($event)"></app-quote-form>
+      </div>
+      <div class="col-md-6">
+        <!-- highlight -->
+        <div *ngFor="let Quote of theQuotes; let i = index">
+          <h3 appHighlight *ngIf="Quote.votes === count && Quote.votes>0"> {{ Quote.theQuote }} </h3>
+          <h3 id="{{i}}"> {{ Quote.theQuote }} </h3>
+          <h4 id={{i}}>-{{ Quote.author }}</h4>
+          <small id={{i}}>{{ Quote.person }}</small>
+          <p id="{{i}}">~Submitted {{ Quote.timeCreated | timeCount }} days ago~</p>
+          <button id="vote1" class="vote">
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <span  (click)="adding(i)">up vote</span>
+          </button>
+
+          <button id="vote2" class="vote">
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+            <span  (click)="removing(i)">down vote</span>
+          </button>
+          <app-quote-details [quote]='Quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <!-- <div class="footer"> -->
+    <div class="footer-text">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="footer-text"> -->
+    <p>&#169; Copyright.2018. All Rights Reserved</p>
+    <!-- </div> -->
+  </div>
+</div>

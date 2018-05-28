@@ -1,0 +1,58 @@
+
+.col {
+    padding: -4em 1.3em;
+}
+.text-uppercase {
+  font-size: 30px;
+}
+.col-md-6{
+  padding-bottom: 5rem
+}
+i {
+  margin-bottom: 5px;
+}
+p{
+  margin: 0;
+}
+.header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  padding: 1em 0em em 0em;
+  text-align: center;
+  color: white;
+
+  max-height: 25vh;
+
+}
+
+
+.list-inline-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-quote{
+  padding-top: 3rem;
+}
+.col-md-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+.vote{
+  background-color: grey;
+  color: black;
+  height: 40px;
+  width: 130px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+}
+#vote1{
+  margin-right: 50px;
+}
